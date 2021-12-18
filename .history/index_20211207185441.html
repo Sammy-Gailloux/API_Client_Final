@@ -1,0 +1,68 @@
+<head>
+    <meta charset="UTF-8">
+    <meta author="Sammy Gailloux">
+    <meta http-equiv="Content-Type" content="text/html; charset= ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Gestionnaire de nouvelles</title>
+
+    <!---STYLES BUNDLE -------------------------------------------------------------------------->
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Tooltips styles -->
+    <link rel="stylesheet" href="css/tooltip.css">
+
+    <!-- Confirm dialog styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+    <!-- Font awesome styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- photo manager main layout styles -->
+    <link rel="stylesheet" href="css/photosManagerLayout.css">
+
+    <!-- favicon link: use https://favicon.io/favicon-converter/ to create new favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!---Page backgroung image------------------------------------------------------------------>
+    <style>
+        body {
+            background: url(images/bg.png) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!---TITLE AND USER CONNECTION UI------------------------------------------------------->
+        <div class="title-container">
+            <div>
+                <h1>
+                    <img src="images/newsPic.jpg" style="height: 60px; margin-right:8px;float:left;">
+                    Gestionnaire de nouvelles
+                </h1>
+            </div>
+            <div class="user-management-container">
+                <div style="margin-left:10px;margin-top:26px;text-align:left;">
+                    <div id="avatarContainer"></div>
+                    <h4 id="username">non connecté</h4>
+                </div>
+                <div style="margin-top:30px;text-align:right;">
+                    <div id="btn_OpenLoginForm" tooltip="Connexion" tooltip-position="left">
+                        <span id="showSearchIcon" class="giconBig glyphicon glyphicon-log-in">&nbsp;</span>
+                    </div>
+                    <div id="btn_OpenConfirmLogout" tooltip="Déconnexion" tooltip-position="bottom">
+                        <span id="showSearchIcon" class="giconBig glyphicon glyphicon-log-out">&nbsp;</span>
+                    </div>
+                    <div id="btn_OpenProfilDialog" tooltip="Enregistrement" tooltip-position="left">
+                        <img src="images/register.png" id="showRegister" class="icon">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+</body>
